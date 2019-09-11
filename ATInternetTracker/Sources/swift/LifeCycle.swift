@@ -53,7 +53,7 @@ class LifeCycle: NSObject {
     static var timeInBackground: Date? = nil
     
     /// Lifecycle keys
-    enum LifeCycleKey: String, EnumCollection {
+    enum LifeCycleKey: String, EnumCollection, CaseIterable {
         case FirstSession = "ATFirstLaunch"
         case LastSession = "ATLastUse"
         case FirstSessionDate = "ATFirstLaunchDate"
@@ -245,9 +245,9 @@ class LifeCycle: NSObject {
     
     - returns: a closure that will return a JSON
     */
-    static func getMetrics() -> (() -> String) {
+    static func getMetrics(defaults: UserDefaults = .standard) -> (() -> String) {
         return {
-            let userDefaults = UserDefaults.standard
+            let userDefaults = defaults
             
             if userDefaults.object(forKey: LifeCycleKey.FirstSession.rawValue) == nil {
                 LifeCycle.firstLaunchInit()

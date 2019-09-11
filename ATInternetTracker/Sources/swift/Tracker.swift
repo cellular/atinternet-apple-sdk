@@ -32,6 +32,7 @@
 
 import Foundation
 import CoreData
+import ObjC
 
 #if !os(watchOS)
     import UIKit

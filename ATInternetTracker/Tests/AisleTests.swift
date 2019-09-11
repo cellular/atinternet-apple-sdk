@@ -32,6 +32,7 @@ SOFTWARE.
 
 import UIKit
 import XCTest
+@testable import Tracker
 
 class AisleTests: XCTestCase {
 
@@ -39,6 +40,7 @@ class AisleTests: XCTestCase {
     lazy var aisles: Aisles = Aisles(tracker: Tracker())
     
     func testSetAisle() {
+
         aisle.level1 = "Vêtement"
         aisle.level2 = "Chaussures"
         aisle.level3 = "Basket"

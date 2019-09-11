@@ -29,7 +29,7 @@ SOFTWARE.
 //  Cart.swift
 //  Tracker
 //
-
+import Foundation
 
 /// Wrapper class to manage your cart
 public class Cart: BusinessObject {

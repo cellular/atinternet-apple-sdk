@@ -31,6 +31,7 @@ SOFTWARE.
 //
 
 import Foundation
+import ObjC
 
 /// Properties for extending String object
 extension String {    

@@ -37,6 +37,7 @@ SOFTWARE.
 //#endif
 
 import Foundation
+import ObjC
 
 class Dispatcher: NSObject {
     

@@ -22,3 +22,7 @@ xcuserdata/
 !*.xcodeproj/project.pbxproj
 docs/
 *.swp
+
+# Swift Package Manager
+.swiftpm
+.build/

@@ -32,10 +32,12 @@ SOFTWARE.
 
 import UIKit
 import XCTest
+@testable import ObjC
 
 class CrashTests: XCTestCase {
 
     func testCompute() {
+
         let report = (Crash.compute() as NSDictionary?) as! [String: Any]?
         if let _ = report {
             XCTAssert(false, "Il ne doit pas y'avoir de données relatives à un crash")

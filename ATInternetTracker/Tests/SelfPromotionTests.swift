@@ -31,6 +31,7 @@
 //
 
 import XCTest
+@testable import Tracker
 
 class SelfPromotionTests: XCTestCase {
     override func setUp() {

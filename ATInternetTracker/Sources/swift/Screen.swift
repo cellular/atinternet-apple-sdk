@@ -31,7 +31,7 @@ SOFTWARE.
 //
 
 import Foundation
-
+import ObjC
 
 /// Business object type for screen tracking. Used only for specific case.
 public class ScreenInfo: BusinessObject {

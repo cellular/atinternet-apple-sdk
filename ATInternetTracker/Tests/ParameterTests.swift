@@ -32,6 +32,7 @@ SOFTWARE.
 
 import UIKit
 import XCTest
+@testable import Tracker
 
 class ParameterTests: XCTestCase {
 
